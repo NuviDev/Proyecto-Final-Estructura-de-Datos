@@ -1,0 +1,204 @@
+/* ===== TEMA OSCURO GENERAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0b12; /* Negro morado muy oscuro */
+    color: #e8e0f5;      /* Blanco suave */
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(90deg, #3b0a45, #600022);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    border-bottom: 1px solid #77004a;
+}
+
+header h1 {
+    margin: 0;
+    color: #f2d0ff;
+}
+
+nav a {
+    color: #ffd4f3;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4a9d;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    padding: 25px;
+}
+
+.titulo-seccion {
+    color: #ff80d6;
+    margin-bottom: 20px;
+}
+
+/* ===== GLASS CONTAINER ===== */
+.glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 0 15px rgba(140, 0, 90, 0.4),
+        0 0 30px rgba(80, 0, 120, 0.3);
+    margin-bottom: 30px;
+}
+
+.glass-container-glosario {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 0 15px rgba(140, 0, 90, 0.4),
+        0 0 30px rgba(80, 0, 120, 0.3);
+    margin-bottom: 30px;
+}
+
+/* ===== IFRAME ===== */
+iframe {
+    width: 100%;
+    height: 650px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* ===== BOTONES NEON ===== */
+.btn-neon {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #3b0a45; /* morado oscuro */
+    border: 2px solid #c300ff; /* morado neon */
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #c300ff55;
+    margin-right: 10px;
+}
+
+.btn-neon:hover {
+    background: #c300ff; /* neon */
+    color: #000;
+    box-shadow:
+        0 0 10px #c300ff,
+        0 0 20px #c300ff,
+        0 0 40px #c300ff;
+    transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #caa2ff;
+}
+
+/* Sección centrada */
+.videos-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Subtítulos de videos */
+.video-box h3 {
+    color: #b871ff; /* morado suave */
+    margin-top: 20px;
+}
+
+/* VIDEO RESPONSIVE 1280×720 */
+.video-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 10px 0 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(140, 0, 255, 0.4);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover neon morado */
+.video-container:hover {
+    box-shadow: 0 0 25px #9a4bff, 0 0 50px #9a4bff;
+    transition: 0.3s;
+}
+
+/* ==== CONTENEDOR DEL MODELO RESPONSIVO ==== */
+.modelo-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;   /* Ya no se estira */
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(115, 0, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* IFRAME RESPONSIVO REAL */
+.modelo-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Botones AR / VR */
+.botones-navegacion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CRÉDITOS */
+.creditos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #d3aaff;
+}
+
+.creditos a {
+    color: #ff3ad7;
+    text-decoration: none;
+}
+
+.creditos a:hover {
+    text-shadow: 0 0 8px #ff63f0;
+}
+
+/* ==== RESPONSIVIDAD PARA CELULAR ==== */
+@media (max-width: 768px) {
+    .modelo-container {
+        aspect-ratio: 4 / 3;  /* versión vertical más natural */
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 5px;
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+}
