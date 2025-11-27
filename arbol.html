@@ -49,7 +49,36 @@
     </div>
 </section>
 
-</body>
+<section>
+        <div class="glass-container farming-wrapper">
+            
+            <h2 class="titulo-seccion" style="color: #66fcf1;">Data Bank: Base de Datos</h2>
+            <p style="color: #a3a3a3; text-align: center; margin-bottom: 20px;">
+                Selecciona una categoría para desplegar las rutas de obtención.
+            </p>
 
+            <div class="control-panel farming-panel">
+                <div class="panel-header">
+                    <span class="icon">📡</span>
+                    <span class="text">ESTADO: CONECTADO</span>
+                </div>
+                <button class="btn-neon btn-small btn-reset" onclick="resetFarmingTree()">
+                    ⟳ Reiniciar Sistema
+                </button>
+            </div>
+
+            <div class="scroll-container">
+                <canvas id="farmingCanvas"></canvas>
+            </div>
+            
+            <p id="mensaje-estado" class="creditos system-text">
+                Sistema listo. Esperando entrada del Rover...
+            </p>
+
+        </div>
+    </section>
+
+    <script src="script-arbol.js"></script>
+</body>
 </html>
 
